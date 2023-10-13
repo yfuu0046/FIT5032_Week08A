@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Welcome";
+}
+
+<h2>Welcome to My App</h2>
+
+<button id="showMessage">Click Me!</button>
+
+<div id="messageDiv" style="display:none;">
+    <p>This is a simple message to improve user experience.</p>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#showMessage").click(function(){
+            $("#messageDiv").show();
+        });
+    });
+</script>
